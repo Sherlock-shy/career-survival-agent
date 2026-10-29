@@ -25,7 +25,8 @@ moment the last one closes, and its bar is higher.
   promotion is the first objective. During the run, Health and Dignity are
   held in the target band set in `adaptive-decision-planning` (upper-middle
   of the scale), not kept full; anything above the band is a budget to
-  spend on Output and Network.
+  spend on whichever promotion input still rises (Output and Network, or
+  Skill once those are held). A gain on a stat already full is worth zero.
 - The run is scored as an average over several runs, and an early exit
   ruins a run. Push hard, but never into a failure direction: a gamble that
   risks ending the run is never worth one extra level. Keeping hidden risk
@@ -61,11 +62,14 @@ Network, after Defuse when the risk mode is raised.
 ## Phase guidance
 
 - **Year 1:** build Output and Network, keep Health and Dignity in their
-  band, and keep risk defused. Early stats may be held at the starting
-  level until the first promotion; clean event handling matters most then.
-- **Years 2 and 3:** this is where most promotions are won or lost. Keep
-  Output and Network growing alongside Skill. A stat parked at its cap is
-  spare capacity to convert into Output.
+  band, and keep risk defused. If gains stop landing on a stat, clean
+  event handling is what still counts.
+- **Years 2 and 3:** most review windows fall here, so most chances to
+  climb do too. Keep
+  Output and Network growing alongside Skill. A stat parked at its cap (often
+  Dignity) is spare capacity: convert it through clean options into the
+  promotion input that still rises at this level (see "Spare resources" in
+  `adaptive-decision-planning`).
 - **Year 4:** keep pushing for the remaining promotion windows, including
   the last one at the end of the run. In the final quarter, use Energy on
   Health recovery and Mental recovery to bring both back towards the top of

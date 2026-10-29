@@ -1,6 +1,6 @@
 # Skills design
 
-Team: IQ2 Only. Submission: `adaptive-career-agent-v1`. Platform: JiuwenSwarm
+Team: IQ2 Only. Submission: `adaptive-career-agent` (v10 rules). Platform: JiuwenSwarm
 `0.2.4b3`, single-agent mode (`"mode": "agent"`).
 
 ## 1. Overview
@@ -19,7 +19,7 @@ future-planning       ──► "where are we in the 6-month / 48-month cycle?"
 feedback-assessment   ──► "what did recent results and remarks tell us?"
   │
   ▼
-adaptive-decision-planning  (choice rubric / Energy bundle / main action)
+adaptive-decision-planning  (hard rules / priority order / Energy / main action)
   │        ▲
   │        ├── risk-reward-gamble  (filter any risky option)
   │        └── deep-analysis       (only if information is missing)
@@ -40,26 +40,30 @@ agent guessed a wrong skill name and played with no strategy.
 - **Inputs:** the `observe` result (status, event text, choices), plus the
   one-line outputs of the supporting Skills.
 - **Method:**
-  - **Current version (v3):** a fixed priority order: survival, then
-    defuse hidden risk, then Output, then Network, then Wealth. When the
-    risk gauge is positive for the whole quarter ("risk low" mode), Output
-    moves ahead of Defuse. Skill becomes the target once Output and Network are held at a level (the Skill pivot, added in v6). Health and Dignity are
-    held in a team-chosen target band in the upper-middle of the scale
-    (around 6–7), and raised to the top in the final quarter.
-  - Earlier versions used a six-step **choice rubric**, applied in priority
-    order (step 5, "do not over-protect Health", was listed between
-    hidden-risk hygiene and cheap costs):
-    1. survival first;
-    2. the cap rule: a gain on a stat at its cap of 10 is worth zero, and
-       a small loss on it is nearly free;
-    3. raise the lagging promotion input, with extra weight on Output before
-       a review;
-    4. hidden-risk hygiene: resolve problems rather than bury them;
-    5. accept only cheap costs.
-  - An **Energy bundle** built from three slots: defensive, risk and growth.
-    All 3 Energy is always spent.
-  - A **main-action mapping** from the biggest current gap to the published
-    effects of each main action, re-checked every quarter.
+  - **Hard rules,** checked on every choice: a Defuse clock (at least every
+    other quarter, every quarter while any risk remark is not positive); no
+    High-intensity work; in the two quarters before a review never lower
+    Output; no Energy on a stat that has stopped rising at this level;
+    deliver what you own; Network near zero is critical; never buy a full
+    stat, and spend a spare one on gains that land.
+  - **Priority order** for everything else: survival, then defuse hidden
+    risk, then Output, then Network, then Wealth. When every risk remark in
+    the quarter is positive ("risk low" mode), Output moves ahead of Defuse.
+  - **Skill pivot:** when Output and Network have stopped rising and a
+    window has been missed at this level, Energy goes to Skill learning,
+    the main action rotates Apply for rotation and Build a mentorship, and
+    event choices prefer Skill gains.
+  - **Health and Dignity** are held in a team-chosen band (around 6–7) and
+    raised to the top in the final quarter. A stat above the band is spare
+    and may be spent through clean options on gains that land.
+  - **Energy:** all 3 points are always spent: a Defuse quarter (Defuse
+    plus one point) or a growth quarter (Output, Network or Skill, where it
+    lands), decided by the Defuse clock and the risk mode.
+  - **Main action:** rotated Output-and-Network actions; Lay low when Health
+    is in the warning zone or support is withdrawn; Repair a key
+    relationship when Network is damaged; Skill actions under the pivot.
+  - **Output stall breaker:** when Output stalls while it can still rise,
+    or the manager says results are not visible, push visible results.
 - **Output:** one `take_action` with a short `notes` string recording the
   need addressed and the stat expected to move.
 
@@ -80,7 +84,7 @@ agent guessed a wrong skill name and played with no strategy.
   - **Published failure directions:** negative Wealth and Network near zero
     are treated as critical.
 - **Output:** one line, for example "Critical: none. Saturated: Dignity.
-  Lagging: Output. Review in 2 months."
+  Held: Output. Review in 2 months."
 
 ### 2.3 `future-planning`
 
@@ -159,8 +163,8 @@ agent guessed a wrong skill name and played with no strategy.
    and what is saturated.
 2. `future-planning` and `feedback-assessment` set the **objective** for this
    quarter: which promotion input to push, and whether risk needs defusing.
-3. The hub scores every option with the rubric. Survival needs always outrank
-   growth; growth goes to the lagging input.
+3. The hub checks the hard rules, then the priority order. Survival needs
+   always outrank growth; growth goes to the input that can still rise.
 4. Any option that looks risky passes through `risk-reward-gamble` before it
    can be chosen.
 5. `deep-analysis` is the exception path, used only when steps 1–4 cannot be
@@ -168,11 +172,12 @@ agent guessed a wrong skill name and played with no strategy.
 
 ## 4. Why no scripts or reference files
 
-The Skills contain only instructions. The decisions depend on reading event
-text and judging it in context. A script would need fixed numbers or fixed
-mappings, and the competition rules forbid hard-coded thresholds and
-per-event answers. The handbook is available in-run through
-`show_employee_handbook`, so a copy in `reference/` would only add tokens.
+- **Scripts.** Decisions depend on reading event text in context. A script
+  would need fixed numbers or a fixed situation-to-answer map, which the
+  rules forbid, and the agent in this setup has no tool that runs code
+  (its tools are the Skill loader, a todo list and the game's MCP tools).
+- **Reference files.** The handbook is available in-run through
+  `show_employee_handbook`, so a copy in `reference/` would only add tokens.
 
 ## 5. Token budget
 

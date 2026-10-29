@@ -42,11 +42,13 @@ every month; it is the most frequent feedback in the run.
   on this scale and act on the current level:
   - *Positive* (all is well): only when every risk remark in the quarter
     was positive and no blow-up has happened is the risk mode *low*, and
-    Output then comes before Defuse.
+    Output then comes before Defuse. Keep the steady Defuse rhythm anyway
+    (hard rule 1 in `adaptive-decision-planning`): a positive remark means
+    risk has not shown yet, not that none is building.
   - *Any concern, even mild or "not serious yet"*: defuse this quarter.
   - *Withdrawn support* (you are left on your own, nobody will cover for
     you) or *anger / alarm* (buried problems about to go off): emergency.
-    These come right before a blow-up. Defuse at the next Energy phase,
+    Treat them as a warning that a blow-up may be close. Defuse at the next Energy phase,
     and in events pick the option that resolves or discloses problems
     over any stat gain.
   Do not judge severity by how polite the wording sounds. A calm remark

@@ -26,9 +26,42 @@ when information is missing).
 6. `take_action` with a short `notes` string (one sentence, at most ~20
    words): the need addressed and the stat you expected to move.
 
+**Keep playing until the game has ended.** Every reply ends with a tool call
+(`observe` or `take_action`). When you write what you will do next, make that
+call in the same reply. If you were resumed after a pause, continue the full
+loop as before, not one step at a time.
+
 Keep reasoning short on routine event turns: a few lines naming the risk
 mode, the deciding priority and the choice. Think longer only at quarterly
 phases, before a review, or when a stat is near the warning zone.
+
+## Hard rules (check these on every choice)
+
+1. **Defuse before HR frowns.** Hidden risk builds from ordinary events even
+   when every remark is positive, and HR only reports it after it has built.
+   So keep a Defuse clock: at each Energy phase, check when you last chose
+   Defuse legacy risk. If it was not last quarter, it is time: Defuse this
+   quarter, even if HR is smiling. If any risk remark this quarter was not
+   positive, Defuse every quarter until HR is positive again. Only a stat already in the warning zone comes first. Risk
+   control is judged over the whole run, so a concern that was cleaned up
+   later still costs points.
+2. **No High-intensity work.** Its in-game description says it raises
+   HiddenRisk, and it costs Health and Dignity. Hidden risk can end the
+   run, so the Output it adds is not worth it.
+3. **Review half-year: never lower Output.** In the two quarters before a
+   review, never pick an option that lowers Output. If every option lowers
+   it, pick the smallest loss.
+4. **No Energy on a stat at its bar.** Never buy Prepare report materials
+   when Output is at its bar (the value it stopped at
+   on this level), and never buy Network maintenance when Network is at its
+   bar. Spend that point where it lands, such as Skill learning.
+5. **Deliver what you own.** Avoid options that drop, delay, hand off or
+   quietly skip your own work or updates.
+6. **Network near zero is critical.** Raise it before growth spending.
+7. **Never buy a full stat; spend the spare.** A gain on a stat at the top
+   of its scale is worth zero: never pick an option or spend Energy for it.
+   A stat above its band is spare: let a clean option spend it for a gain
+   that lands (see "Spare resources").
 
 ## Risk mode
 
@@ -83,6 +116,31 @@ input still able to grow. While this holds:
 
 Risk raised mode still comes first: Defuse is never dropped for Skill.
 
+## Spare resources
+
+Some stats sit higher than the plan needs. That surplus scores nothing
+during the run, because the ending judges the final condition, so it is a
+budget to spend on promotion inputs, then refill near the end.
+
+- **Full stat (top of its scale):** any gain on it is worth zero. When
+  comparing options, ignore that part of the gain. If an option's only
+  gain is on a full stat, treat it as an option with no gain.
+- **Spare stat (above its band):** usually Dignity, sometimes Health. A cost
+  paid from it is cheap, as long as the stat stays in or above the band
+  afterwards.
+- **Where the spend goes:** to a gain that lands this level, in this order:
+  a promotion input below its bar or still rising (Output, then Network),
+  otherwise Skill. A gain on a held stat is worth zero, so never pay spare
+  for it.
+- **Prefer the trade.** Between two clean options, take the one that costs
+  a spare or full stat and gains a stat that lands, over one that only adds
+  to a full stat.
+- **Clean only.** Spare is never spent on an option that hides, buries,
+  delays or bends rules. That creates hidden risk, which costs more than
+  any gain.
+- **Refill late.** In the final quarter, stop spending and bring Health and
+  Dignity back towards the top (`future-planning`).
+
 ## Health and Dignity: target band
 
 Hold Health and Dignity in a target band in the upper-middle of the 0–10
@@ -93,7 +151,8 @@ threshold.
   use the defensive Energy slot.
 - **In the band:** fine. Do not spend Energy or choices to raise them.
 - **Above the band:** spare buffer. Accept options that cost a little Health
-  or Dignity when they raise Output or Network, as long as the stat stays in
+  or Dignity when they raise a stat that lands (Output, Network, or Skill
+  once those are held), as long as the stat stays in
   or above the band afterwards (check: current value minus the cost), and
   only if that gain is real (next rule).
 - **Pay only for gains that land.** Before paying Health or Dignity for an
@@ -121,15 +180,8 @@ Always spend all 3 Energy. Read each action's in-game description in the
 choices: it can state effects the published table leaves out. An action
 described as raising HiddenRisk counts against the Defuse priority.
 
-**High-intensity work** raises HiddenRisk as well as Output, and costs
-Health and Dignity. Use it only when all of these hold:
-
-- the risk mode is low;
-- Output actually rose after the last Output gains (it is not held);
-- Health and Dignity are above the band and stay in it after the cost;
-- it was not used in the previous quarter.
-
-Otherwise use Prepare report materials for Output.
+**High-intensity work:** never (hard rule 2). Use Prepare report materials
+for Output.
 
 **Risk raised mode:**
 
@@ -140,11 +192,16 @@ Otherwise use Prepare report materials for Output.
 
 **Risk low mode (Output first):**
 
-1. Output: High-intensity work (2) only if every condition above holds;
-   otherwise Prepare report materials (1).
-2. Network maintenance (1).
-3. Any point left: Health recovery or Mental recovery if a stat is below the
-   band, otherwise Prepare report materials.
+- **Defuse quarter** (no Defuse last quarter): Defuse legacy risk (2), then
+  one growth point where it lands (Output if below its bar or rising,
+  otherwise Network, otherwise Skill learning if it fits).
+- **Growth quarter** (Defused last quarter):
+  1. Output: Prepare report materials (1) if Output is below its bar or
+     still rising.
+  2. Network maintenance (1) if Network is below its bar or still rising.
+  3. Otherwise Skill learning (2).
+  4. Any point left: Health recovery or Mental recovery if a stat is below
+     the band, otherwise the cheapest action that still lands.
 
 ## Quarterly main action
 
@@ -168,9 +225,9 @@ Exceptions:
 
 Compare the gain printed in each outcome with the stat in the next
 `observe`. If gains are shown but the stat does not rise, it may be held at
-the current level until the next promotion (this is common before the first
-promotion). While a stat is held, never pay Health or Dignity for it, and
-do not use High-intensity work for it. Keep making clean,
+the current level until the next promotion. Judge this from what you see
+in this run, not from expectation. While a stat is held, never pay Health or Dignity for it, and
+do not buy Energy for it. Keep making clean,
 professional event choices (no dropped work, no buried problems), keep risk
 defused, and let the review judge the half-year. Visible gains return after
 a promotion.

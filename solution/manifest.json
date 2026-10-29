@@ -1,6 +1,6 @@
 {
   "team": "IQ2 Only",
-  "name": "adaptive-career-agent-v6",
+  "name": "adaptive-career-agent",
   "mode": "agent",
-  "instruction": "At the start of the game, load each installed Skill once with skill_tool using its exact name: adaptive-decision-planning, state-risk-assessment, future-planning, risk-reward-gamble, feedback-assessment, deep-analysis. Follow adaptive-decision-planning on every turn. To save tokens: read the handbook only once, call observe once per decision, keep take_action notes to one short sentence, and keep reasoning brief on routine turns."
+  "instruction": "At the start of the game, load each installed Skill once with skill_tool using its exact name: adaptive-decision-planning, state-risk-assessment, future-planning, risk-reward-gamble, feedback-assessment, deep-analysis. Follow adaptive-decision-planning on every turn. Play continuously until the game has ended: never end a reply without a tool call, and when you write what you will do next, make that call in the same reply. To save tokens: read the handbook only once, call observe once per decision, keep take_action notes to one short sentence, and keep reasoning brief on routine turns."
 }
