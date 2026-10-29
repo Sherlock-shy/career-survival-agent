@@ -74,8 +74,8 @@ Network, after Defuse when the risk mode is raised.
   the last one at the end of the run. In the final quarter, use Energy on
   Health recovery and Mental recovery to bring both back towards the top of
   the scale, while event choices and the main action still push the
-  promotion inputs. The ending evaluates the final condition, so Health,
-  Dignity, Network and Wealth must end in a healthy state. Do not take new
+  promotion inputs. The ending evaluation covers Health and Dignity,
+  Network and Wealth, so finish with all of them in a healthy state. Do not take new
   risks whose consequences would land after the run ends without benefit.
 
 ## Wealth

@@ -37,20 +37,18 @@ phases, before a review, or when a stat is near the warning zone.
 
 ## Hard rules (check these on every choice)
 
-1. **Defuse before HR frowns.** Hidden risk builds from ordinary events even
-   when every remark is positive, and HR only reports it after it has built.
-   So keep a Defuse clock: at each Energy phase, check when you last chose
+1. **Defuse before HR frowns.** Hidden risk has no visible number, so a
+   positive remark is not proof that none is building. Keep a Defuse clock: at each Energy phase, check when you last chose
    Defuse legacy risk. If it was not last quarter, it is time: Defuse this
    quarter, even if HR is smiling. If any risk remark this quarter was not
-   positive, Defuse every quarter until HR is positive again. Only a stat already in the warning zone comes first. Risk
-   control is judged over the whole run, so a concern that was cleaned up
-   later still costs points.
+   positive, Defuse every quarter until HR is positive again. Only a stat
+   already in the warning zone comes first.
 2. **No High-intensity work.** Its in-game description says it raises
    HiddenRisk, and it costs Health and Dignity. Hidden risk can end the
    run, so the Output it adds is not worth it.
-3. **Review half-year: never lower Output.** In the two quarters before a
-   review, never pick an option that lowers Output. If every option lowers
-   it, pick the smallest loss.
+3. **Never lower Output before a review.** Reviews come every six months,
+   so every quarter is part of a review half-year: never pick an option
+   that lowers Output. If every option lowers it, pick the smallest loss.
 4. **No Energy on a stat at its bar.** Never buy Prepare report materials
    when Output is at its bar (the value it stopped at
    on this level), and never buy Network maintenance when Network is at its
@@ -118,9 +116,8 @@ Risk raised mode still comes first: Defuse is never dropped for Skill.
 
 ## Spare resources
 
-Some stats sit higher than the plan needs. That surplus scores nothing
-during the run, because the ending judges the final condition, so it is a
-budget to spend on promotion inputs, then refill near the end.
+Some stats sit higher than the plan needs. That surplus is a budget to
+spend on promotion inputs during the run, then refill near the end.
 
 - **Full stat (top of its scale):** any gain on it is worth zero. When
   comparing options, ignore that part of the gain. If an option's only
@@ -164,7 +161,7 @@ threshold.
   Health, take the smallest cost.
 - **Never let either reach the warning zone** for the sake of Output.
 - **End of run:** in the final quarter, raise both towards the top of the
-  scale, because the ending evaluates the final condition
+  scale, since the ending evaluation covers their condition
   (`future-planning`).
 
 A gain on a stat that is already at the cap of 10 is worth zero.
@@ -188,7 +185,9 @@ for Output.
 1. Defuse legacy risk (2). Never skip this in risk raised mode, even right
    before a review.
 2. Last point: Health recovery or Mental recovery (1) if a stat is below the
-   band; otherwise Prepare report materials (1) for Output.
+   band; otherwise Prepare report materials (1) if Output is below its bar
+   or still rising; otherwise Network maintenance (1) on the same test;
+   otherwise recovery.
 
 **Risk low mode (Output first):**
 
@@ -234,9 +233,11 @@ a promotion.
 
 ## Output stall breaker
 
-Treat Output as **stalled** when it has not risen over the last quarter
-while other stats kept rising, or when manager feedback says results are
-not visible (for example, working hard without wins). While stalled:
+Treat Output as **stalled** when it has fallen below the highest value it
+reached at this level, or when manager feedback says results are not
+visible (for example, working hard without wins). If Output simply stopped
+rising at its highest value, it is held, not stalled: see "When a stat will
+not move" and the Skill pivot. While stalled:
 
 - Rotate the main action among the Output-focused ones above.
 - In events, prefer the option with an Output gain, unless Output is held
