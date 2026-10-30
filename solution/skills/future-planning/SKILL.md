@@ -82,4 +82,4 @@ Network, after Defuse when the risk mode is raised.
 
 Wealth comes mainly from salary and review bonuses, so level and review
 grades drive it. Avoid choices that cost Wealth unless they prevent a larger
-loss, and never let Wealth stay negative.
+loss, and never let Wealth sit at or near zero: a run that stays there ends.

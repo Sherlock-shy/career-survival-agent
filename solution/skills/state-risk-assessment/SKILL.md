@@ -47,7 +47,7 @@ priority order (Output, then Network, then Wealth; Skill becomes the target unde
   quarter, it may be held at the current level until the next promotion.
   Report it as held, not stalled, so the decision step stops spending
   Health on it.
-- **Floors:** Wealth below zero and Network that has fallen to near zero,
+- **Floors:** Wealth at or near zero and Network that has fallen to near zero,
   or stayed there for a long time, are published failure directions. Treat
   either as critical. All stats start low by design, so a low starting value
   in the opening months is not a crisis.

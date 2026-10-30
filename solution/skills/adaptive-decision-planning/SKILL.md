@@ -65,7 +65,9 @@ it when choosing.
 
 - **Health or Dignity in the warning zone:** recovery first (Energy and
   events), Lay low as the main action; never spend either for a gain.
-- **Wealth near or below zero:** take Wealth-saving options; never pick an
+- **Wealth at or near zero** (the displayed value is rounded, so 0 may
+  already be below zero, and staying there ends the run): pick options that
+  keep or add Wealth, and never pick an
   option that costs Wealth.
 - **Network near zero:** Repair a key relationship and Network maintenance
   before any growth spending.
@@ -115,7 +117,7 @@ the monthly feed (see `feedback-assessment`):
 Apply in this order. A higher priority wins over a lower one.
 
 0. **Survival.** If a failure direction is active (Health or Dignity in the
-   warning zone, Wealth negative, Network fallen to near zero, repeated weak
+   warning zone, Wealth at or near zero, Network fallen to near zero, repeated weak
    reviews, a risk emergency), the option that most directly relieves it
    wins.
 1. **Defuse hidden risk** (in risk raised mode). Prefer options that
