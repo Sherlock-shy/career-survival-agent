@@ -23,8 +23,10 @@ when information is missing).
    where Health and Dignity sit against the target band, and any critical
    need.
 5. Score each choice with the priority order below and take the best one.
-6. `take_action` with a short `notes` string (one sentence, at most ~20
-   words): the need addressed and the stat you expected to move.
+6. `take_action` with exactly one choice number (never a list) and a short
+   `notes` string (one sentence, at most ~20 words): the need addressed and
+   the stat you expected to move. At an Energy phase, spend Energy one
+   action per call, then `observe` and choose the next.
 
 **Keep playing until the game has ended.** Every reply ends with a tool call
 (`observe` or `take_action`). When you write what you will do next, make that
