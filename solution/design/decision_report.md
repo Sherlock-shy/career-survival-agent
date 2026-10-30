@@ -76,7 +76,8 @@ score averages three runs, so from v6 on we compared repeat runs.
 | v4 | 66.53 | Risk remarks rose after each use of High-intensity work, matching its in-game description | High-intensity work gated, later removed |
 | v6 | 73.75, 60.25 | Long stays at L4 with Output and Network flat while Skill rose; L5 came when Skill was high | Skill pivot after a missed window |
 | v9 | 68.88, 64.70 | First review passed more often with "deliver what you own"; HR concern often rose a quarter after a calm quarter without Defuse | Defuse clock; no High-intensity work |
-| v10 (submitted) | 70.89, 66.37 | Best average over two runs (68.63) and no blow-ups. The Defuse clock kept risk control at 100 in both runs. Skill learning was rarely bought, so L5 came at month 42 and 48 | Later tests |
+| v10 | 70.89, 66.37 | No blow-ups; the Defuse clock kept risk control at 100. Skill learning was rarely bought, so L5 came at month 42 and 48 | Later tests |
+| v10-final (submitted) | 68.58, 72.50 | Same rules plus fair-play rewording, a keep-playing rule, published-rules and near-limit sections and shorter routine reasoning. L5 at month 42 in both runs, risk control 100, tokens down to 0.93–1.16M per month | This release |
 | v11–v17 (tests after v10) | 68.14, 69.81, 49.7, 44.57, 42.02, 57.6, plus eliminated runs | A narrower blow-up rule, earlier Skill focus, a mode for capped levels, a run ledger and red-flag wording improved the first reviews but brought more blow-ups and one stalled run | Kept for the next release |
 
 This release keeps the v10 rules, which were the most stable over repeated

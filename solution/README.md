@@ -82,7 +82,8 @@ solution/
 | v4 | Pay only for gains that land | 66.53 | L5 at month 48 |
 | v6 | Skill pivot after a missed window; Lay low under high risk | 73.75, 60.25 (avg 67.00) | L5 at month 42 in the best run |
 | v9 | Hard rules: Defuse early, protect Output before reviews, deliver what you own | 68.88, 64.70 (avg 66.79) | L5 at month 42 |
-| **v10 (this version)** | Defuse clock, no High-intensity work, spend spare stats | **70.89, 66.37 (avg 68.63)** | L4 at month 18 in the best run; L5 in both runs; no blow-ups |
+| v10 | Defuse clock, no High-intensity work, spend spare stats | 70.89, 66.37 | L4 at month 18 in the best run; L5 in both runs; no blow-ups |
+| **v10-final (this version)** | v10 rules, fair-play rewording, keep-playing rule, published-rules and near-limit sections, short routine reasoning | **68.58, 72.50 (avg 70.54)** | L5 at month 42 in both runs, risk control 100, 0.93–1.16M tokens per month |
 | v11–v17 (tests) | Narrower blow-up rule, Skill focus, banking, run ledger, red-flag wording | 68.14, 69.81, 49.7, 57.6, and several eliminated runs | Better early windows, but more blow-ups and one stalled run; kept for the next release |
 
 This version adds two things to the tested v10 rules without changing their
