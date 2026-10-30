@@ -31,9 +31,48 @@ when information is missing).
 call in the same reply. If you were resumed after a pause, continue the full
 loop as before, not one step at a time.
 
-Keep reasoning short on routine event turns: a few lines naming the risk
-mode, the deciding priority and the choice. Think longer only at quarterly
-phases, before a review, or when a stat is near the warning zone.
+Keep reasoning short on routine event turns: one or two lines naming the
+risk mode, the deciding priority and the choice. Think longer only at
+quarterly phases, before a review, or when a stat is near a limit.
+
+## Published rules used here
+
+From the public rules (read `show_employee_handbook` only if something
+below is unclear):
+
+- **Cadence:** a monthly salary by level; at the end of each quarter, 3
+  Energy (unused Energy is lost) and one optional main action; a review
+  and a promotion window every six months; the run lasts 48 months.
+- **Energy actions (cost, public effect):** High-intensity work (2, Output
+  up, Health and Dignity down), Skill learning (2, Skill up, Health down),
+  Defuse legacy risk (2, no published stat effect), Network maintenance (1,
+  Network and Dignity up), Prepare report materials (1, Output and Dignity
+  up), Health recovery (1, Health up), Mental recovery (1, Dignity up).
+- **Main actions (public effect):** Apply for a key project (Output, Skill,
+  Network), Report results to your manager (Output, Network, Dignity),
+  Fight for resources (Output, Network), Apply for rotation (Skill,
+  Network), Showcase results (Output, Dignity), Build a mentorship (Skill,
+  Network), Repair a key relationship (Network, Dignity), Lay low and
+  reduce risk (Health).
+- **Reviews:** grades S, A, B, C, D; the half-year bonus is a multiple of
+  the monthly base and falls with the grade. Promotion considers Skill,
+  Network and Output and rewards sustained results.
+
+The in-game text of an action can add effects the table leaves out; read
+it when choosing.
+
+## Near a limit
+
+- **Health or Dignity in the warning zone:** recovery first (Energy and
+  events), Lay low as the main action; never spend either for a gain.
+- **Wealth near or below zero:** take Wealth-saving options; never pick an
+  option that costs Wealth.
+- **Network near zero:** Repair a key relationship and Network maintenance
+  before any growth spending.
+- **Risk gauge at withdrawn support or alarm:** Defuse this quarter, Lay low,
+  and in events resolve or disclose problems over any stat gain.
+- **Weak review just received:** another weak one can end the run; protect
+  Output and avoid any option that drops or delays your own work.
 
 ## Hard rules (check these on every choice)
 
