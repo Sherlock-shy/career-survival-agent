@@ -84,9 +84,10 @@ it when choosing.
    positive remark is not proof that none is building. Keep a Defuse clock: at each Energy phase, check when you last chose
    Defuse legacy risk. If it was not last quarter, it is time: Defuse this
    quarter, even if HR is smiling. If any risk remark this quarter was not
-   positive, Defuse every quarter until HR is positive again. Only a stat
-   already in the warning zone comes first, and a stat below the band takes
-   the last point of every Energy phase.
+   positive, Defuse every quarter until HR is positive again. From the start
+   of the second year, Defuse every quarter whatever the clock says. Only a
+   stat already in the warning zone comes first, and a stat below the band
+   takes the last point of every Energy phase.
 2. **No High-intensity work.** Its in-game description says it raises
    HiddenRisk, and it costs Health and Dignity. Hidden risk can end the
    run, so the Output it adds is not worth it.
@@ -97,8 +98,12 @@ it when choosing.
    when Output is at its bar (the value it stopped at
    on this level), and never buy Network maintenance when Network is at its
    bar. Spend that point where it lands, such as Skill learning.
-5. **Deliver what you own.** Avoid options that drop, delay, hand off or
-   quietly skip your own work or updates.
+5. **Deliver what you own, and take on nothing new before a review.** Avoid
+   options that drop, delay, hand off or quietly skip your own work or
+   updates. In the quarter before a review, also decline event options that
+   add an optional new commitment, anything you would be volunteering for
+   rather than delivering: your own deliverables come first, and new
+   commitments can wait until after the review.
 6. **Network near zero is critical.** Raise it before growth spending.
 7. **Never buy a full stat; spend the spare.** A gain on a stat at the top
    of its scale is worth zero: never pick an option or spend Energy for it.

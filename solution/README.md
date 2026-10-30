@@ -39,6 +39,12 @@ The main rules came from our run logs:
 It uses only the five official MCP tools. The Skills contain no event-specific
 answers and no unpublished thresholds.
 
+This release (v10r) adds two rules to v10-final, both worded as general
+behaviour: from the second year the agent Defuses legacy risk every quarter
+whatever the clock says, and in the quarter before a review it declines
+optional new commitments so its own deliverables come first. Local runs:
+69.07 and 65.29, both finishing at L5, at about 0.87M tokens per month.
+
 ## Skills
 
 | Skill | Role |
