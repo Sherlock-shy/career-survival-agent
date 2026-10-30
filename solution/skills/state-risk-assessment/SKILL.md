@@ -65,3 +65,30 @@ One line for the decision step, for example:
 "Risk mode: raised (concern). Health 8 above band, Dignity 6 in band.
 Output stalling. Review in 2 months."
 Keep it short; do not restate every number.
+
+## Near a limit: what to flag first
+
+Report these as critical, before anything else, whenever they hold:
+
+- Health or Dignity in the warning zone (bottom third of the scale).
+- Wealth at or near zero, or Network near zero: published failure
+  directions.
+- The risk gauge at withdrawn support or alarm.
+- A weak review grade in the last half-year: repeated weak reviews are a
+  published failure direction.
+
+Below these, flag any stat below the target band and any promotion input
+that has fallen below its highest value at this level.
+
+## Across the 48 months
+
+Report the months to the next review and to month 48 on every turn. In the
+final quarter, flag Health and Dignity below the top of the scale as needs,
+because the ending evaluation covers their condition.
+
+## If the wording or order of events changes
+
+Read the risk gauge from the meaning of a remark (positive, concern,
+withdrawn support, alarm), not from exact phrases, and read every other
+need from the numbers in `observe`. None of this depends on which events
+appear or in what order.

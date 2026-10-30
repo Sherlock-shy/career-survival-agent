@@ -77,3 +77,25 @@ assumptions.
 If the conversation was compressed, call `check_latest_logs` once with a
 small count to recover the latest grade, warnings and recent choices, then
 continue. Do not re-read logs on normal turns.
+
+## Near a limit
+
+An explicit warning, a D grade, or a risk gauge at withdrawn support or
+alarm is critical this turn: it outranks every growth consideration until it
+is addressed. A C grade or any non-positive risk remark sets the focus for
+the whole next quarter.
+
+## Across the 48 months
+
+Compare each review with the previous one at the same level. Repeated weak
+reviews are a published failure direction, so after a weak grade the next
+half-year is protective: Output kept at its bar, no new commitments, risk
+defused every quarter. In the final year, feedback that cannot be acted on
+before month 48 is noted and not chased.
+
+## If the wording or order of events changes
+
+Classify every remark by its meaning (praise, mild concern, withdrawn
+support, alarm, a named weakness) rather than its wording, and read grades
+and stat changes from the numbers. The responses above apply whatever the
+events are and in whatever order they come.

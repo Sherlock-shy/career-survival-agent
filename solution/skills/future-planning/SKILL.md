@@ -83,3 +83,19 @@ Network, after Defuse when the risk mode is raised.
 Wealth comes mainly from salary and review bonuses, so level and review
 grades drive it. Avoid choices that cost Wealth unless they prevent a larger
 loss, and never let Wealth sit at or near zero: a run that stays there ends.
+
+## Near a limit
+
+- Review next month and a promotion input below its highest value at this
+  level: top it up before anything else that quarter.
+- Review next month and the risk gauge not positive: Lay low and reduce
+  risk is the main action, and Defuse comes first in Energy.
+- Final two quarters: no new risks, Health and Dignity back towards the top,
+  Wealth protected; the ending evaluation is what counts now.
+
+## If the wording or order of events changes
+
+The plan keys off the published cadence (3 Energy per quarter, a review and
+a promotion window every six months, 48 months in all) and off the stats
+the agent observes. It never keys off a particular event, so it holds when
+the events, their order or the parameter values change.

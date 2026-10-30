@@ -34,3 +34,25 @@ Never read package files, databases or any other non-official source.
 Return one sentence to `adaptive-decision-planning`: the missing fact and
 what it implies for the choice. Then decide; do not loop back into further
 analysis for the same turn.
+
+## Near a limit
+
+If a stat is in its warning zone, Wealth is at or near zero, or the risk
+gauge is at withdrawn support or alarm, and an option's effect on that stat
+cannot be read from its text, this is the one case to check the handbook
+before acting. Otherwise take the option with the smallest cost to the
+threatened stat and move on; do not spend a call on it.
+
+## Across the 48 months
+
+Tokens per month are scored, so the budget is a handful of calls per run:
+most in the first year, when the published costs and effects are still
+being confirmed, and none in the final year unless a failure direction is
+live. `check_latest_logs` is for recovery after context loss, not routine
+review.
+
+## If the wording or order of events changes
+
+Nothing here depends on a particular event. The triggers are "the effect
+cannot be read from the text" and "the choice is high-stakes", and both
+apply to any event in any order.

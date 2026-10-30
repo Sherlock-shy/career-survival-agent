@@ -35,3 +35,22 @@ by the rules above. The hidden-risk cost is not visible until it is too late.
 
 If a gamble is taken, say so in the `notes` so that `feedback-assessment`
 can check the outcome and stop repeating it if it went badly.
+
+## Near a limit
+
+When any stat is in its warning zone, Wealth is at or near zero, Network is
+near zero, or the risk gauge shows withdrawn support or alarm, no gamble is
+allowed at all: take the safest clean option, even at a small cost to
+Output.
+
+## Across the 48 months
+
+A loss early in the run can be recovered; one late cannot. So the bar for a
+gamble rises every year and is absolute in the last two quarters, when the
+ending evaluation is close and nothing taken then can be repaired.
+
+## If the wording or order of events changes
+
+Judge an option by what it does (hides or defers a problem, shortens a
+process, bets on luck or on someone else's reaction), not by how it is
+phrased or which story it appears in. The same test applies to any event.
