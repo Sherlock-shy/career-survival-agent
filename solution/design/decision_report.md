@@ -1,6 +1,6 @@
 # Decision report
 
-Team: IQ2 Only. Submission: `adaptive-career-agent` (v10 rules).
+Team: IQ2 Only. Submission: `adaptive-career-agent` v18 (v10 rules plus fixes).
 
 ## 1. Decision approach
 
@@ -85,6 +85,16 @@ runs, and adds two changes that do not alter its decisions: wording that
 cites in-game descriptions instead of patterns from our logs, and a rule to
 keep playing until the game ends (one later test run stalled when the agent
 stopped without making its next tool call).
+
+Version 18 keeps the v10 rules and adds what the last day of logs showed.
+Two runs died of Health zero at the first level because one Energy branch
+had no "recover a stat below the band" line; all three branches now have
+it. A run blew up at month 12 after a mild HR remark went unanswered, and
+two others blew up in the second year with HR still positive, so Defuse
+legacy risk runs every quarter from the second year and whenever any remark
+is not positive. Three runs lost a window to optional extra work accepted
+just before a review, so in the quarter before a review the agent declines
+new commitments. Local runs of v18: 69.07 and 65.29, both finishing at L5.
 
 ## 5. Principal risks
 
