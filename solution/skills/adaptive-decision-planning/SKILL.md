@@ -85,7 +85,8 @@ it when choosing.
    Defuse legacy risk. If it was not last quarter, it is time: Defuse this
    quarter, even if HR is smiling. If any risk remark this quarter was not
    positive, Defuse every quarter until HR is positive again. Only a stat
-   already in the warning zone comes first.
+   already in the warning zone comes first, and a stat below the band takes
+   the last point of every Energy phase.
 2. **No High-intensity work.** Its in-game description says it raises
    HiddenRisk, and it costs Health and Dignity. Hidden risk can end the
    run, so the Output it adds is not worth it.
@@ -235,8 +236,9 @@ for Output.
 **Risk low mode (Output first):**
 
 - **Defuse quarter** (no Defuse last quarter): Defuse legacy risk (2), then
-  one growth point where it lands (Output if below its bar or rising,
-  otherwise Network, otherwise Skill learning if it fits).
+  the last point: Health recovery or Mental recovery (1) if a stat is below
+  the band; otherwise one growth point where it lands (Output if below its
+  bar or rising, otherwise Network).
 - **Growth quarter** (Defused last quarter):
   1. Output: Prepare report materials (1) if Output is below its bar or
      still rising.
