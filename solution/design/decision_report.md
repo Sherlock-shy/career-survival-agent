@@ -71,37 +71,42 @@ score averages three runs, so from v6 on we compared repeat runs.
 | Version | Runs | What the logs showed | Change in the next version |
 |---|---|---|---|
 | v0 baseline (no Skills) | 65.85 | Grades C, C, B, B, B, B, A, A; managers asked for "clearer results"; Dignity at 10 from month 3; the same main action 15 quarters in a row; L5 only at month 48 | Priority order, cap rule, main action rotation |
-| v1.1 | 44.2 | L4 by month 18, then eliminated at month 32 by a second hidden-risk blow-up. Defuse in only 4 quarters; "you're on your own now" was read as mild | Defuse by default; HR remark as a risk gauge; withdrawn support is an emergency |
+| v1.1 | 44.2 | L4 by month 18, then eliminated at month 33 by a second hidden-risk blow-up. Defuse in only 4 quarters; a calm HR remark that support had been withdrawn was read as mild | Defuse by default; HR remark as a risk gauge; withdrawn support is an emergency |
 | v2, v3 | stopped at L1 | Gains were printed but stats did not move at L1; the agent paid Health for them and got D grades for dropped work | Stats can stop rising at a level; pay only for gains that land |
-| v4 | 66.53 | Risk remarks rose after each use of High-intensity work, matching its in-game description | High-intensity work gated, later removed |
-| v6 | 73.75, 60.25 | Long stays at L4 with Output and Network flat while Skill rose; L5 came when Skill was high | Skill pivot after a missed window |
+| v4 | 66.53 | Risk remarks rose after each use of High-intensity work, matching its in-game description; long stays at L4 with Output and Network flat while Skill rose, and L5 came when Skill was high | High-intensity work gated (later removed); Skill pivot after a missed window (v6) |
+| v6 | 73.75, 60.25 | The same Skills scored 73.75 and then 60.25, so single runs could not rank versions | Repeat runs from v6 on; hard rules (v9) |
 | v9 | 68.88, 64.70 | First review passed more often with "deliver what you own"; HR concern often rose a quarter after a calm quarter without Defuse | Defuse clock; no High-intensity work |
 | v10 | 70.89, 66.37 | No blow-ups; the Defuse clock kept risk control at 100. Skill learning was rarely bought, so L5 came at month 42 and 48 | Later tests |
-| v10-final (submitted) | 68.58, 72.50 | Same rules plus fair-play rewording, a keep-playing rule, published-rules and near-limit sections and shorter routine reasoning. L5 at month 42 in both runs, risk control 100, tokens down to 0.93–1.16M per month | This release |
-| v11–v17 (tests after v10) | 68.14, 69.81, 49.7, 44.57, 42.02, 57.6, plus eliminated runs | A narrower blow-up rule, earlier Skill focus, a mode for capped levels, a run ledger and red-flag wording improved the first reviews but brought more blow-ups and one stalled run | Kept for the next release |
+| v10-final | 58.77 (29 Oct), then 68.58, 72.50, 28.18, 61.45 (30 Oct) | Same rules plus fair-play rewording, a keep-playing rule, published-rules and near-limit sections and shorter routine reasoning. On 30 October the first two runs reached L5 at months 48 and 42 with risk control 100 and tokens at 0.93–1.16M per month; of the next two, one went broke at month 8 and the other had a hidden-risk blow-up at month 24 | Base for v18 |
+| v11–v17 (tests after v10) | Completed 68.14, 69.81, 49.7, 57.6; eliminated 44.57, 42.02, 22.75, 22.98, 17.07 | A narrower blow-up rule, earlier Skill focus, a mode for capped levels, a run ledger and red-flag wording improved the first reviews but brought more blow-ups and one stalled run | Not adopted in v18 |
 
-This release keeps the v10 rules, which were the most stable over repeated
-runs, and adds two changes that do not alter its decisions: wording that
-cites in-game descriptions instead of patterns from our logs, and a rule to
-keep playing until the game ends (one later test run stalled when the agent
+v10-final kept the v10 rules, which were the most stable over repeated
+runs, and fixed three contradictions in them. It also reworded the rules to
+cite in-game descriptions instead of patterns from our logs, and added a rule
+to keep playing until the game ends (one later test run stalled when the agent
 stopped without making its next tool call).
 
 Version 18 keeps the v10 rules and adds what the last day of logs showed.
-Two runs died of Health zero at the first level because one Energy branch
-had no "recover a stat below the band" line; all three branches now have
-it. A run blew up at month 12 after a mild HR remark went unanswered, and
-two others blew up in the second year with HR still positive, so Defuse
-legacy risk runs every quarter from the second year and whenever any remark
-is not positive. Three runs lost a window to optional extra work accepted
+One run went broke at month 8, so Wealth at or near zero is now critical.
+One run died of Health zero at the first level, and another fell to Health
+2, because one Energy branch had no "recover a stat below the band" line;
+all three branches now have it. Two runs blew up in the second year with HR
+still positive, so Defuse legacy risk now runs every quarter from the second
+year, as well as whenever any remark is not positive. Three runs lost a window to optional extra work accepted
 just before a review, so in the quarter before a review the agent declines
-new commitments. Local runs of v18: 69.07 and 65.29, both finishing at L5.
+new commitments. Local runs of v18: 69.07 and 65.29, both finishing at L5;
+the second still blew up at month 12 after a mild HR remark went
+unanswered. v10-final's first two runs on 30 October averaged 70.54, but of
+its next two, one went broke at month 8 and the other blew up; v18's two
+runs averaged 67.18 with no elimination. v18 was our submission at the second cut-off and scored 68.50
+officially.
 
 ## 5. Principal risks
 
 - **Hidden risk.** Its conditions are not published and it can surface late,
   sometimes while HR is still positive. Mitigation: a Defuse clock (at least
   every other quarter, every quarter while any remark is not positive, every
-  quarter after a blow-up), Lay low when support is withdrawn, never
+  quarter after a blow-up, and every quarter from the second year), Lay low when support is withdrawn, never
   High-intensity work, and options that hide problems are rejected.
 - **Health.** Health at zero ends the run. Mitigation: Health and Dignity
   are held in a band, event choices never take Health below it, and the

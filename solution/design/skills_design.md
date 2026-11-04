@@ -1,6 +1,6 @@
 # Skills design
 
-Team: IQ2 Only. Submission: `adaptive-career-agent` (v10 rules). Platform: JiuwenSwarm
+Team: IQ2 Only. Submission: `adaptive-career-agent` v18 (v10 rules plus fixes). Platform: JiuwenSwarm
 `0.2.4b3`, single-agent mode (`"mode": "agent"`).
 
 ## 1. Overview
@@ -10,21 +10,17 @@ the hub that runs on every turn. The other five are consulted by the hub: each
 answers one narrow question, so the hub can combine their answers into a
 single `take_action` call.
 
-```text
-observe
-  │
-  ▼
-state-risk-assessment ──► "what needs attention now?"
-future-planning       ──► "where are we in the 6-month / 48-month cycle?"
-feedback-assessment   ──► "what did recent results and remarks tell us?"
-  │
-  ▼
-adaptive-decision-planning  (hard rules / priority order / Energy / main action)
-  │        ▲
-  │        ├── risk-reward-gamble  (filter any risky option)
-  │        └── deep-analysis       (only if information is missing)
-  ▼
-take_action (choice + one-sentence notes)
+```mermaid
+flowchart TD
+    O[observe] --> S["state-risk-assessment: what needs attention now?"]
+    O --> F["future-planning: where are we in the 6-month and 48-month cycle?"]
+    O --> B["feedback-assessment: what did recent results and remarks tell us?"]
+    S --> H["adaptive-decision-planning: hard rules, priority order, Energy, main action"]
+    F --> H
+    B --> H
+    H <--> G["risk-reward-gamble: filter any risky option"]
+    H -.-> D["deep-analysis: only if information is missing"]
+    H --> T["take_action: one choice and a one-sentence note"]
 ```
 
 All six Skills are loaded once at game start, as the manifest `instruction`
@@ -41,9 +37,10 @@ agent guessed a wrong skill name and played with no strategy.
   one-line outputs of the supporting Skills.
 - **Method:**
   - **Hard rules,** checked on every choice: a Defuse clock (at least every
-    other quarter, every quarter while any risk remark is not positive); no
-    High-intensity work; in the two quarters before a review never lower
-    Output; no Energy on a stat that has stopped rising at this level;
+    other quarter, every quarter while any risk remark is not positive, and
+    every quarter from the second year); no High-intensity work; in the two
+    quarters before a review never lower Output, and in the quarter before a
+    review take on no optional new commitments; no Energy on a stat that has stopped rising at this level;
     deliver what you own; Network near zero is critical; never buy a full
     stat, and spend a spare one on gains that land.
   - **Priority order** for everything else: survival, then defuse hidden
