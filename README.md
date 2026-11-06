@@ -1,11 +1,10 @@
-> **DRAFT: rewrite this in your own words before publishing**, and fill in the [brackets].
-
 # Career Survival Agent (Huawei Tech Arena UK 2026)
 
-Team IQ2 Only: [names and roles].
+Team IQ2 Only.
 
-For this challenge [link] we built an LLM agent that plays a 48-month career
-simulation. Each month it reads events and chooses actions, trying to get
+For the Huawei Tech Arena UK 2026 challenge (official starter kit:
+[RAI-Internal/techarena-career-sim](https://github.com/RAI-Internal/techarena-career-sim))
+we built an LLM agent that plays a 48-month career simulation. Each month it reads events and chooses actions, trying to get
 promoted high and early while keeping health, money and hidden risk under
 control.
 
